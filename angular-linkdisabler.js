@@ -1,16 +1,17 @@
 (function(){
 
-    var moduleName = "hyperlink.disabler";
+    var moduleName = "ui.disable";
     var module = angular.module(moduleName,[]);
 
-    module.directive('link-disable',function(){
+    module.directive('uiDisable',function(){
         return {
             restrict:"A",
             scope:{
-                disabled:"=disabled"
+                disabled:"=disable"
             },
             link:{
                 pre: function(scope, element, attrs) {
+                    console.log(scope.disabled);
                    element.bind('click',function(event){
                        if(scope.disabled) {
                         event.stopImmediatePropagation();            
