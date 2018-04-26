@@ -11,10 +11,12 @@
             },
             link:{
                 pre: function(scope, element, attrs) {
-                    console.log(scope.disabled);
+                    if(scope.disabled) {
+                      element.addClass('ui-disabled');
+                    }
                     element.bind('click',function(event){
                        if(scope.disabled) {
-                        event.stopImmediatePropagation();            
+                        event.stopImmediatePropagation();
                         event.preventDefault();
                        }
                    })
