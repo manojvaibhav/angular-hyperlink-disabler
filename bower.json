@@ -1,0 +1,20 @@
+{
+  "name": "angular-ui-disable",
+  "main": "angular-ui-disable.js",
+  "homepage": "https://github.com/manojvaibhav/angular-ui-disable",
+  "description": "Angular Directive that disables UI elements like hyperlinks",
+  "keywords": [
+    "Angular-ui-disable"
+  ],
+  "authors": [
+    "Manoj Vaibhav"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
