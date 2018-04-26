@@ -7,12 +7,12 @@
         return {
             restrict:"A",
             scope:{
-                disabled:"=disable"
+                disabled:"=disabled"
             },
             link:{
                 pre: function(scope, element, attrs) {
                     console.log(scope.disabled);
-                   element.bind('click',function(event){
+                    element.bind('click',function(event){
                        if(scope.disabled) {
                         event.stopImmediatePropagation();            
                         event.preventDefault();
